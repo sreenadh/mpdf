@@ -45,7 +45,7 @@ class CacheTest extends \PHPUnit_Framework_TestCase
 
 			$this->assertDirectoryExists($dir);
 
-			$this->assertFileExists($dir);
+			$this->assertTrue(file_exists($dir));
 		} finally {
 			@rmdir($dir);
 		}

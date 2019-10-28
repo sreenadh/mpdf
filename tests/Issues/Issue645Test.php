@@ -25,7 +25,7 @@ class Issue645Test extends \Mpdf\BaseMpdfTest
 
 		$this->mpdf->Close();
 
-		$this->assertCount(4, $this->mpdf->pages);
+		$this->assertSame(4, count($this->mpdf->pages));
 	}
 
 }

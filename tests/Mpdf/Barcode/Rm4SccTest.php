@@ -19,7 +19,7 @@ class Rm4SccTest extends \PHPUnit_Framework_TestCase
 
 		$this->assertInternalType('array', $array);
 		$this->assertArrayHasKey('maxh', $array);
-		$this->assertGreaterThan(0, $array['maxh']);
+		$this->assertTrue($array['maxh'] > 0);
 	}
 
 }
